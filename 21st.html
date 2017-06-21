@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>my website</title>
+<script>
+	
+	function s(){
+var x = parseInt(document.getElementById('text1').value);
+var y = parseInt(document.getElementById('text2').value);
+var z=x+y;
+document.getElementById('text3').value=z;
+
+	}
+</script>
+<script>
+	function a(x){
+		var ans = confirm('Do you want to change the background color?')
+		document.bgColor=x;
+	} if(ans) {
+		document.bgColor=x;
+	}
+
+
+</script>
+</head>
+<body>
+<h1>Do....While </h1>
+<p>
+<script>
+	var i=1;
+	do{
+		document.write(i);
+		i++;
+	}while (i<=10);	
+</script>
+<h1>Introduce Array</h1>
+</p>
+<p><script>
+var fruits = ['apple','banana','mango','guava','grapes'];
+for(i=0; i<4; i++);{
+	document.write(fruits[i]);
+}
+</script>
+</p>
+<h1>Js Browser objects</h1>
+<p>
+<input type="text" id="text1"/><br/>
+<input type="text" id="text2"/><br/>
+<input type="text" id="text3"/><br/>
+<button onclick="s()">click</button><br/>	
+
+</p>
+<h1>Change Background</h1>
+<p>
+<button onclick="a('grey')">grey</button>
+<button onclick="a('red')">red</button>
+<button onclick="a('blue')">blue</button>
+</p>
+
+</body>
+</html>
